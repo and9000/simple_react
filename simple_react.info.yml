@@ -1,0 +1,5 @@
+name: Simple React
+type: module
+description: Simple React integration for drupal
+core: 8.x
+package: Custom

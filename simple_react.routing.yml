@@ -1,0 +1,8 @@
+
+simple_react.react_controller_load:
+  path: '/simple_react'
+  defaults:
+    _controller: '\Drupal\simple_react\Controller\ReactController::load'
+    _title: 'Load'
+  requirements:
+    _permission: 'access content'

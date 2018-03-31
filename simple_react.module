@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains simple_react.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function simple_react_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the simple_react module.
+    case 'help.page.simple_react':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Simple React integration for drupal') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function simple_react_theme() {
+  return [
+    'simple_react' => [
+      'render element' => 'children',
+    ],
+  ];
+}
