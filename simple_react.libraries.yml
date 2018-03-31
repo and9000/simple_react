@@ -1,0 +1,5 @@
+simple_react_app_wrapper:
+  js:
+    js/react_component/dist/react_component.js: {}
+  dependencies:
+    - core/drupalSettings

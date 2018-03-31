@@ -17,8 +17,12 @@ class ReactController extends ControllerBase {
    */
   public function load() {
     return [
-      '#type' => 'markup',
-      '#markup' => $this->t('Implement method: load')
+      '#theme' => 'simple_react',
+      '#attached' => [
+        'library' => [
+          'simple_react/simple_react_app_wrapper',
+        ],
+      ],
     ];
   }
 
